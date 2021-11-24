@@ -1,3 +1,4 @@
+(We hereby declare: We will adjust the model code after the paper passes the review.)
 # MS-PGCN
 Recently, graph convolutional networks have shown excellent results in skeleton-based action recognition. This paper
 presents a Multi-Stage Part-aware Graph Convolutional Network for the problems of model over complication, parameter redun-
