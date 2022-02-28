@@ -1,36 +1,7 @@
-(We hereby declare: We will adjust the model code after the paper passes the review.)
+
 # MS-PGCN
-Recently, graph convolutional networks have shown excellent results in skeleton-based action recognition. This paper
-presents a Multi-Stage Part-aware Graph Convolutional Network for the problems of model over complication, parameter redun-
-dancy and lack of feature information. The structure of this network has a multi-stream input and two-stream output, which can
-greatly reduce the complexity of the model and improve the accuracy of the model without losing sequence information. The two
-branches of the network have the same backbone, which include 6 multi-order features extraction blocks and 3 temporal attention
-calibration blocks, to extract the feature. The output features of two branches are fused from multi-stage of the backbone. In multi-
-order features extraction block, a channel-spatial attention mechanism and a graph condensation module are proposed, which can
-extract more distinguishable feature and identify the relationship between parts. In temporal attention calibration block, an attention
-module is used to calibrate the time frame in the skeleton sequence. Experimental data shows that this model outperforms the
-most mainstream methods on NTU and Kinetics datasets. e.g., achieving 92.4 % accuracy on the cross-subject benchmark of
-NTU-RGBD60 dataset.
+We plan to make further improvements to MS-PGCN. We will be very sorry if it troubles you. I hope to understand, thank you!
 
-#Framework
-
-
-![image](https://user-images.githubusercontent.com/75009289/139197712-9707ca85-e69c-43c4-afbc-7a90ad0c398a.png)
-
-Figure 1: Comparisons of different methods on NTU60 (CS setting) in terms of accuracy and the number of parameters. Among these methods, the proposed MS- model achieves the best performance with an order of magnitude smaller model size.
-#FRAMEWORK
-![image](https://user-images.githubusercontent.com/75009289/139197254-e0313c92-63af-4da4-a4e8-0ca467254a21.png)
-
-Figure2: Illustration of the overall architecture of the MS-PGCN. The scores of two streams are added to obtain the final prediction. In the feature
-extraction part, one green block represents an MFEB, and one yellow block represents a TACB.
-![image](https://user-images.githubusercontent.com/75009289/139198036-2ae63db9-79f1-42f9-9211-167ad7731196.png)
-
-Figure3:Illustration of the multi-order features extraction block
-(MFEB). channel-spatial attention mechanism (CSAM), graph con-
-volutional network (GCN) and graph condensation module (GCM).
-Notably, GCM only changes the topology and does not change the
-number of channels. Moreover, a residual connection is add for every
-two GCN.
 
 #Prerequisites
 
